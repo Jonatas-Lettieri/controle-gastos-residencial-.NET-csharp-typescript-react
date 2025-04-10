@@ -1,0 +1,89 @@
+/* Estilos gerais da aplicação */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Estilo para o conteúdo principal */
+  .container {
+    flex: 1 0 auto;
+  }
+  
+  /* Estilo para o footer */
+  .footer {
+    flex-shrink: 0;
+    margin-top: auto;
+  }
+  
+  /* Estilos para os cards na home page */
+  .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para as tabelas */
+  .table th {
+    background-color: #f8f9fa;
+  }
+  
+  /* Estilos para valores financeiros */
+  .text-success {
+    font-weight: 500;
+  }
+  
+  .text-danger {
+    font-weight: 500;
+  }
+  
+  /* Animação para as notificações */
+  .alert {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px;
+    }
+    
+    .table-responsive {
+      border: 0;
+    }
+  }
+  
+  /* Estilo para campos obrigatórios */
+  .form-label.required::after {
+    content: '*';
+    color: red;
+    margin-left: 4px;
+  }
+  
+  /* Estilo para totais na consulta de totais */
+  .card h3 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para centralizar elementos no centro da tela vertical */
+  .vh-100-center {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
